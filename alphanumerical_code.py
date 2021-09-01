@@ -1,7 +1,7 @@
 import random
 
 def character(no):
-    alphanum = "ABCDEFGHIJKLMNOPQRSTUVWYZabcdefghijklmnopqrstuvwxyz1234567890"
+    alphanum = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
     return alphanum[no]
 
 def gen_string():
@@ -9,7 +9,7 @@ def gen_string():
     code = ""
     i = 0
     while(i<16):
-        code += character(random.randint(0,60))
+        code += character(random.randint(0,61))
         i += 1
     return code
 
